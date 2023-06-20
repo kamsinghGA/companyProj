@@ -1,0 +1,13 @@
+<%- include('./partials/header') %>
+
+<ul>
+    <% staffs.forEach(function(staff) { %>
+      <li>
+        <a href="/staffs/<%= staff.id %>"><%= staff.name %></a>
+        - 
+        <%= staff.year %>
+      </li>
+    <% }); %>
+</ul>
+
+<%- include('./partials/footer') %>

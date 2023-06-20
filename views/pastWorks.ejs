@@ -1,0 +1,13 @@
+<%- include('./partials/header') %>
+
+<ul>
+    <% pastWorks.forEach(function(p) { %>
+      <li>
+        <a href="/pastWorks/<%= p.id %>"><%= p.work %></a>
+        - 
+        <%= p.done ? 'Project is Completed' : 'Project is In-Progress' %>
+      </li>
+      <% }); %>
+</ul>
+
+<%- include('./partials/footer') %>
